@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: #293264;
+    background-color: #f5f7fb;
+    font-family: "Karla", sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/blob-yellow.png),
+        url(../assets/images/blob-blue.png);
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position: 128% -22%, -18% 112%;
+}
+
+.title-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0 0 0.25em 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    margin-bottom: 2em;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 1em 3.4em;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f5f7fb;
+    background-color: #4d5b9e;
+    border: none;
+    border-radius: 15px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    color: #ffffff;
+    background-color: #364383;
+}
+
+/***************
+ questions page 
+ **************/
+
+.questions-page {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container {
+    padding-bottom: 1.5em;
+    border-bottom: 0.8px solid #dbdef0;
+}
+
+.answers {
+    display: flex;
+    gap: 1.5em;
+    text-align: center;
+}
+
+.answer {
+    padding: 0.4em 2.1em;
+    font-family: "Inter", sans-serif;
+    border: 0.8px solid #4d5b9e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selected-answer {
+    background: #d6dbf5;
+    border: none;
+}
+
+.correct-answer {
+    background: #94d7a2;
+}
+
+.incorrect-answer {
+    background: #f8bcbc;
+    opacity: 0.5;
+}
+
+.unselected-answer {
+    opacity: 0.5;
+}
+
+.unselected-incorrect-answer {
+    opacity: 0.5;
+}
+
+.selected-incorrect-answer {
+    background: #f8bcbc;
+    opacity: 0.5;
+}
+
+.answers-btn {
+    padding: 1em 2.1em;
+    margin-top: 2em;
+    align-self: center;
+}
+
+.selected {
+    background-color: lightblue;
+}
